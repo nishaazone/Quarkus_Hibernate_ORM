@@ -1,26 +1,34 @@
-# Quarkus Hibernate ORM
-Implementation of Quarkus-Hibernate-ORM by creatiing REST Endpoints and POSTGRES database.
+# Quarkus Hibernate ORM Implementation
 
-# How to run-
-## Here i am using a docker image of POSTGRES database
- * Step-1: Install a Docker Desktop
- Step-2: Go to https://code.quarkus.io/ create a new quarkus project and choose necessary dependencies for your project.
-    ** Dependencies to be added in POM.xml
-       ****1) Rest Easy Classic
-       ****2) Rest Easy Classic Jackson
-       ****3) Quarkus hibernate orm panache
-       ****4) Quarkus jdbc postgresql
- * Step-3: Extract the files and open the project in IDE.
- * Step-4: Create Rest Endpoints for basic CRUD operations.
- * Step-5: Add following properties in application.properties file.
- ***quarkus.datasource.jdbc.url=jdbc:postgresql://localhost:5432/my_db_movie 
- ***quarkus.datasource.username=username 
- ***quarkus.datasource.password=password 
- ***quarkus.datasource.db-kind=postgresql 
- ***quarkus.hibernate-orm.database.generation=drop-and-create 
- * Step-6: Open the docker desktop application.
- * Step-7: Open a private command prompt for your project and type in the following docker command-
- ***docker run --name my_db_movie -e POSTGRES_USER=username -e POSTGRES_PASSWORD=password -e POSTGRES_DB=my_db_movie -p 5432:5432 postgres:12.0 
- * Step-8: Open a new private command prompt for your project and type in the following maven command- mvn quarkus:dev
- * Step-9 Run the application in postman.
- ## If you want to see the database you can use DBeaver.
+This guide will help you set up a Quarkus application with Hibernate ORM, creating REST endpoints and using a PostgreSQL database.
+
+## Prerequisites
+1. **Docker Desktop**: Install Docker Desktop to run the PostgreSQL database.
+2. **IDE**: Use an Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse.
+
+## Step-by-Step Guide
+
+### Step 1: Create a New Quarkus Project
+1. Go to [Quarkus Code Generator](https://code.quarkus.io/).
+2. Choose the necessary dependencies for your project:
+   - **RESTEasy Classic**
+   - **RESTEasy Classic Jackson**
+   - **Quarkus Hibernate ORM Panache**
+   - **Quarkus JDBC Postgres**
+
+### Step 2: Extract and Open the Project in Your IDE
+- Extract the generated project files.
+- Open the project in your preferred IDE.
+
+### Step 3: Create REST Endpoints for CRUD Operations
+Create REST endpoints for basic CRUD operations (Create, Read, Update, Delete).
+
+### Step 4: Configure `application.properties`
+Add the following properties to `src/main/resources/application.properties`:
+
+```properties
+quarkus.datasource.jdbc.url=jdbc:postgresql://localhost:5432/my_db_movie
+quarkus.datasource.username=username
+quarkus.datasource.password=password
+quarkus.datasource.db-kind=postgresql
+quarkus.hibernate-orm.database.generation=drop-and-create
