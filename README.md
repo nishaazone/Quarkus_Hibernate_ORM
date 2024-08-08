@@ -5,6 +5,7 @@ This guide will help you set up a Quarkus application with Hibernate ORM, creati
 ## Prerequisites
 1. **Docker Desktop**: Install Docker Desktop to run the PostgreSQL database.
 2. **IDE**: Use an Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse.
+3. **Java Version**: jdk 21
 
 ## Step-by-Step Guide
 
