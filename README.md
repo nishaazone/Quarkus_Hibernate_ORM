@@ -1,4 +1,4 @@
-# Quarkus Hibernate ORM Panache Entity Implementation
+# Quarkus Hibernate ORM PanacheEntity(class) Implementation
 
 This guide will help you set up a Quarkus application with Hibernate ORM, creating REST endpoints and using a PostgreSQL database.
 
