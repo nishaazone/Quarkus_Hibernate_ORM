@@ -31,8 +31,9 @@ quarkus.datasource.jdbc.url=jdbc:postgresql://localhost:5432/my_db_movie
 quarkus.datasource.username=username
 quarkus.datasource.password=password
 quarkus.datasource.db-kind=postgresql
-quarkus.hibernate-orm.database.generation=drop-and-create
+quarkus.hibernate-orm.database.generation=drop-and-create.
 
+```
 ### Step 5: Build a Docker Image for POSTGRES sql.
 - Open a private command prompt for your project and run the following command
 - docker run --name my_db_movie -e POSTGRES_USER=username -e POSTGRES_PASSWORD=password -e POSTGRES_DB=my_db_movie -p 5432:5432 postgres:12.0
