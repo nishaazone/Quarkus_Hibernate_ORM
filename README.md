@@ -42,7 +42,7 @@ quarkus.hibernate-orm.database.generation=drop-and-create.
 - Open a private command prompt for your project and run the following command
 - mvn quarkus:dev
 
-## Step 7: Test the Endpoints on POSTMAN
+### Step 7: Test the Endpoints on POSTMAN
 - Use Postman or any other HTTP client tool to test your REST endpoints.
 
 ## Step 8: (Optional) Visualize Your Database Using DBeaver
