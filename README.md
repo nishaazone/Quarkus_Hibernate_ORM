@@ -45,7 +45,7 @@ quarkus.hibernate-orm.database.generation=drop-and-create.
 ### Step 7: Test the Endpoints on POSTMAN
 - Use Postman or any other HTTP client tool to test your REST endpoints.
 
-## Step 8: (Optional) Visualize Your Database Using DBeaver
+### Step 8: (Optional) Visualize Your Database Using DBeaver
 - If you want to visualize your database schema and data, you can use DBeaver:
     Download and install DBeaver.
     Connect to your PostgreSQL database by providing the host (localhost), port (5432), username (username), password (password), and database name (my_db_movie).
