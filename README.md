@@ -51,3 +51,6 @@ quarkus.hibernate-orm.database.generation=drop-and-create.
     Download and install DBeaver.
     Connect to your PostgreSQL database by providing the host (localhost), port (5432), username (username), password (password), and database name (my_db_movie).
 
+### Tip: Make sure you have these two installed on your PC
+![image](https://github.com/user-attachments/assets/b4115f33-523f-4d9c-990e-c3e7a6d9bbb9)
+
